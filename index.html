@@ -30,7 +30,7 @@
                     <div class="thumb">
                         <img 
                         v-for="(image, index) in slides"
-                        :src="image"
+                        :src="slides[index].image"
                         :class="indexImg === index ? 'active' : ''" />
                     </div>
                 </div>
