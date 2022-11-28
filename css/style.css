@@ -11,10 +11,14 @@
     align-items: center;
 }
 
+.slider-wrapper{
+    height: 300px;
+}
+
 .item {
     float: left;
     width: 700px;
-    height: 300px;
+    height: 100%;
     position: relative;
 }
 
@@ -40,20 +44,21 @@
 }
 
 .thumb {
-    height: calc((300px) / 5);
-    opacity: 0.5;
+    height: calc(100% / 5.27);
 }
 
 .thumb img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: 0.5;
 }
 
-.thumb.active {
+.thumb .active {
     border: 2px solid #ccc;
-    opacity: 1;
+    opacity:initial;
 }
+
 
 .prev, .next {
     width: 20px;
