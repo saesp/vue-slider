@@ -22,19 +22,17 @@
                     <p>{{slides[indexImg].text}}</p>
                     </div>
                 </div>
-            </div>
-
+                
                 <div class="thumbs">
-                    <div class="prev"></div>
-                    <div class="next"></div>
+                    <div class="prev" @click="prevImg"></div>
+                    <div class="next" @click="nextImg"></div>
                     <div class="thumb">
                         <img 
-                        v-for="(image, index) in slides"
-                        :src="slides[index].image"
+                        v-for="(slide, index) in slides"
+                        :src="slide.image"
                         :class="indexImg === index ? 'active' : ''" />
                     </div>
                 </div>
-
             </div>
         </div>
 
